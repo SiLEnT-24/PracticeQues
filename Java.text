@@ -1,0 +1,304 @@
+Programming is artifical language used to connect with machine.
+
+Translator:
+            Translator are software that are used to convert over source code rewritten in high level language into machine code.
+
+             source code/program  ---> compiler/Interpreter ---> machine code ---> binary language 
+
+program language is used to bluid software.
+
+DEVELOPER :
+
+James Gosling
+First version build in 1991 to 1995
+Developed by Sun Microsystem
+It's first name is oak and second name is Green
+
+
+MAIN features:
+      JRE -> Java runtime environment
+      JVM -> Java virtual machine 
+      JIT -> Just in time
+      JDK -> Java development kit
+
+Java C compiler is platfrom indepent
+JRE is platform dependent
+
+It is JRE provide Security.
+
+---------
+|       |
+|       |   first.java file name
+---------
+   |
+--------
+|      |    Byte code 
+|      |    first.class
+--------
+    |
+    |
+__________________________________________
+|                  |                     |
+windows         macOS                 Linux
+  |               |                     |
+JVM/JIT         JVM/JIT               JVM/JIT
+
+
+TOKENS
+
+There are 5 types of operators 
+
+Keywords , Identifiers , operators, separators, Literals
+
+Keywords : Keywords are words to define by language for particular job that job can't by the program it is as reserve words.
+
+Identifier : Identifier are the name give a to variable function , class etc.
+
+Operators : Symbols is used to perform operations over code.
+
+Separater :symbols used to perform separation in our code .
+
+Literals : constant dat our program 
+         types:
+         1. integer lateral
+         2. floating point lateral 
+         3. character lateral
+         4. string
+         5. boolean
+         6. null
+
+Integer Literal:
+
+   Decimal    ---> 0-9  
+   Octal      ---> 0-7  ->0
+   Binary     ---> 0-1  ->0b
+   Hexadecimal --> 0-15 ->0x
+
+After 10 in Hexadecimal is used in A=10, B=11, C=12, D=14, E=15,etc.
+
+Underline( _ )  is used for credibility.
+
+enter --> 10
+space --> 32
+a-z   --> start 97
+A-Z   --> start 65
+
+
+VARIABLE :
+      Variable is container is container to store data.
+      It is reserved memory location in the computers memory to store data and that data can be change as per our needs.
+
+DATA Type :
+     It is predefined word that tells about three things 
+     1. Type of data
+     2. size
+     3. range
+
+Primitive     --> byte(1 byte), short(2 byte), int(4 byte), long(8 byte), float(4 byte), double(8 byte), boolean(1 byte), char(2 byte), void(N/A)
+Non-primitive --> class, object
+
+Gapping Rule of Tokkens
+
+In between the 
+      Keyword and keyword
+      identifier and identifier
+      keyword and identifier
+      identifier and keyword
+
+gap(spaceor new line) is compulsory.
+In between other tokens gap is optional.
+
+TypeCasting : Conversion of one data type into another is known as typecasting
+  types:
+        1. Implicit (widening)  
+        2. Explicit (narrowing)
+
+Impilcit Typecasting: In this we convert smaller data to larger data type.
+                      It is automatically run by compiler.
+
+Explicit Typecasting : In this we convert larger data into smaller data type.
+                       We have to do it manually.
+                       It is also known as lossy conversion.
+
+Assignment Operator : It assign right hand side value to left hand side variable.
+Arithmetic Operator : 
+         int/int       => int
+         int/double    => double
+         double/int    => double
+         double/double => double
+
+precedence: 
+        ()
+        *, /, %
+        +, -
+        /=, +=, -=, *=, =, %=
+
+Short Hand operator (/=, +=, -=, *=, =, %=)
+
+Increment/Decrement : It increase or decrease variable value by one.              
+
+     pre --> first update then use
+     post -> first use then update
+
+Conditional Operator -> (? :) aryan kallu hai ya nahi ? to true : false.
+
+Bitwise Operator :  (& | ^ << >> ~)
+
+Printing Functions
+   printing functions iin java
+   printf  : print with format specifier
+   format  : print with format specifier (same as printf)
+   print   : print without format specifier
+   println : print with new line and without format specifier
+
+import scanner :
+      byte f=sc.nextbyte();
+      short s=sc.nextShort();
+      int  i=sc.nextInt();
+      long l=sc.nextLong();
+      float ff=sc.nextFloat();
+      double d=sc.nextDouble();
+      boolean bb=sc.nextBoolean();
+      string SS=sc.next();
+      string ssl=sc.nextLine();
+      char cc=sc.next().charAt(0);
+
+Decision Making Satement are used to execute given set of statement on the basis of a given condition 
+  It is a four types:  
+               1. if          |
+               2. if else     |---> condition based
+               3. if else if  |
+
+               4. switch      ----> Value making
+
+If Nested conditional statement:
+             If one condition is depend upon another condition then we nested conditional statement
+
+Q1. WAP to check whether a number is positive, negative or zero if the number is positive also print its even or odd.
+
+Switch Statement: 
+ 1. It only works with byte, short, int, char, string and wrapper class.
+    It don't works long, float, double, boolean
+
+Loop : Loop statement are used to repeate a block of code depending upon condition or range  for, Do-while
+
+ for loop: 
+      for(int a=1; a<=10;a++){
+            //SOP("Alok");
+      }
+
+      for(Initilization; Testexpression; Update){
+            //Statements
+      }
+
+Q1. Loop 1+2+3+4+5=15
+Q2. WAP to accept two and a chracter + - * / % and the basis that char we have to perform operation
+
+
+Syntax : 
+  while(condition){
+      statement
+  }
+
+  -------------
+  |           |
+  | condition |----------
+  |           |         |
+  -------------       Exit
+       |
+       |
+   ----------
+   |  Body  |
+   ----------  
+
+
+Q3. WAP to count the no. of digits entered by user.
+Q4. WAP to accept a number from user and print the fibonacci series upto n terms.
+
+DoWhile Loop : 
+       do{
+            //statement
+       } while(testExpression)
+
+
+-------------
+|    Body   |<-----
+-------------     |
+      |           |
+-------------     |
+|           |     |
+| condition |-----|--------
+|           |     |       |
+-------------     |      Exit
+     |            |
+     --------------
+
+if yes ya no ke option ke alawa koi or keyword use na kare show karega invalid in do while loop.
+
+Jump Statement : 
+       Break or continue.
+
+       Break : It is used to terminate the loop immediately.
+       Continue : continue is the iteration of the loop
+
+Function:
+       function is block of code used to perform a specific task.
+
+       Need a Function :
+               1. Provide code reusability 
+               2. Remove dulicacy
+               3. Increase modularity
+               4. Helps in debugging
+
+                Syntax to create a function :
+                                           1.Return type 
+                                           2.Name
+                                           3.Argument list 
+                                           4.Body
+
+To call a function need to two things:
+                                       1.Name
+                                       2.Argument
+
+Return type indicate that the function is returing or not.  After the execution of the body.
+
+Arugment list is set of data that the wants or needs in order to perform its task or job.
+
+Types of Function: 
+                1. function with no arguments and no retutn type
+                2. function with arguments but no return type
+                3. function with no argument but return type
+                4. function with argument and return type
+                5. fuction with simple return type
+
+OOPS (Object oriented programming) : It is created by Alankay.
+                                     First programming language was simula
+                                     First famous programming language to implement OOPS was C++
+                                     
+
+OOPS is programming paradigm (paradigm is way of writting a code)
+
+Class : 
+       class is blueprint\template\designs to create object
+       It is logical entity that Encapsulate Attributes (variables) and Behavior(method) into a single unit
+       It is user define data.
+
+
+Object :    
+         It is a real world entity create from that blueprint 
+         An object is instance of a class
+         It occupied memory
+
+Pillar of OOPS :
+                Abstraction 
+                Encapsulation
+                Inheritance 
+                Polymorphism
+
+Abstraction :
+             Hiding the complexity by providing functionality
+
+Encapsulation : 
+               
+              
+        
