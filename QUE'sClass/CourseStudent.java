@@ -1,5 +1,4 @@
-package classesandobjects;
-class CourseStudent {
+public class CourseStudent {
     private String studentName;
     private String courseName;
     private double courseFee;

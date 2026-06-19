@@ -1,4 +1,3 @@
-package classesandobjects;
 class MovieTicket {
     private String movieName;
     private double ticketPrice;

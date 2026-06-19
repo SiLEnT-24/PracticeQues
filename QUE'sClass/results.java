@@ -1,5 +1,4 @@
-package classesandobjects;
-class studentResult {
+public class results {
     private String studentName;
     private int mathMarks;
     private int scienceMarks;
@@ -7,6 +6,10 @@ class studentResult {
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
+    }
+
+    public String getStudentName() {
+        return studentName;
     }
 
     public void setMathMarks(int mathMarks) {
@@ -43,13 +46,14 @@ class studentResult {
     }
 
     public static void main(String[] args) {
-        studentResult s = new studentResult();
+        results s = new results();
 
         s.setStudentName("Alok");
         s.setMathMarks(90);
         s.setScienceMarks(85);
         s.setEnglishMarks(80);
 
+        System.out.println("Student: " + s.getStudentName());
         System.out.println("Total: " + s.getTotalMarks());
         System.out.println("Average: " + s.getAverage());
         System.out.println("Grade: " + s.getGrade());

@@ -1,4 +1,3 @@
-package classesandobjects;
 class ShoppingCart {
     private String productName;
     private double price;

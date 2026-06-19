@@ -1,4 +1,3 @@
-package classesandobjects;
 class ElectricityBill {
     private String customerName;
     private double unitsConsumed;
