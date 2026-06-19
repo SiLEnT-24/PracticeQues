@@ -298,7 +298,46 @@ Pillar of OOPS :
 Abstraction :
              Hiding the complexity by providing functionality
 
-Encapsulation : 
+Encapsulation:
+             Wrapping of the component to make them secure is known as encapsulation
+             It is the mechanism of wrapping of data and methods into a single unit and restricting the direct access of the data
+             member using access modifier and using those data with the help of public methods.
+
+Inheritance: 
+           using old design to create new design
+           Aquiring the properties and behavior of class to create a new class
+
+Polymorphism: 
+            Many form doing a same job
+            Multiple method having same name
+
+            New is keyword is used to allocate memory to the user
+
+Object Anatomy:
+               Employee a=new employee();
+               local variable in java don't get default value
                
-              
-        
+               Class Employee{
+                  String name;
+                  int salary;
+                  String cname;
+               }
+LOCAL VARIABLE in java doesn't get default values
+STATIC KEYWORD
+static is a keyword in java
+it can be used with 4 things 
+static variable
+static methods 
+static block
+static nested class
+STATIC VARIABLE
+common variable for every object of that class
+it allocates when the class loads in the memory 
+It can be accessed by a class name and object preference both
+static variable are created inside method area in the JVM[]
+
+Static Methods : 
+               It belongs to the class 
+               Can be access by classname and object reference both
+               It allocates when the class load in the memory 
+               It can only access static members
