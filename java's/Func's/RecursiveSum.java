@@ -1,3 +1,4 @@
+package CodeofJaVa.Functions;
 public class RecursiveSum {
     static int sum(int n){
         if(n==1)

@@ -1,3 +1,4 @@
+package CodeofJaVa.Functions;
 public class RecuStringREv {
     static String reverse(String str) {
         if (str.length() == 0)

@@ -1,3 +1,4 @@
+package CodeofJaVa.Functions;
 public class MaximumofthreeNum {
     static int max3(int a, int b, int c){
         if(a>=b && a>=c)

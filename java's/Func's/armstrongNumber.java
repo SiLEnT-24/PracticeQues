@@ -1,4 +1,4 @@
-public class armstrongNumber {
+class armstrongNumber {
     static boolean isArmstrong(int n){
         int temp = n;
         int sum = 0;

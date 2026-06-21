@@ -1,3 +1,4 @@
+package CodeofJaVa.Functions;
 public class SquareofNumber {
     static int square(int n){
         return n*n;
