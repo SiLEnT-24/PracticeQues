@@ -380,10 +380,22 @@ Constructor Chaining:
 
                   Initialize Block: 
                                     Also known as Anonymous block.
-                                    
+                                    It execute before constructor
 
                      It is of two type:
 
+                     
+GET or SET:
+           Class Animal {
+            String name;
+            int age;
+            String getname(){
+                  return name;
+            }
+            void setname(string n){
+                  name=n;
+            }
+           }
 
 
 Destructor : 
