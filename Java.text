@@ -348,3 +348,43 @@ Static Block:
             Only eexecute once 
             can excess static member but can not access non-static member of that class
             Mostly used for initializing the static variable.
+
+Constructor : 
+              It is special method in java 
+              It is invoke implicitly when an object of class is created
+              It doesn't have a return type
+              Its name will be same as that of a class
+              It is used to initialize the non static variables
+
+              Types:
+               
+                   Non-parameterized
+                   parameterized
+
+Constructor Overloading :
+                        Having multiple constructor in a same class with different argument is known as constructor overloading.
+
+Default Constructor : 
+                      It is non parameterized constructor that me get automatically, only if we don't create any constructor.
+                      Used to change parent of constructor class.
+
+Constructor Chaining:  
+                     Need:
+                          It is used to provide code reusability.
+                  
+                  Chaining rule: 
+                                It should be the very first statement in your constructor.
+                                you can only chain one constructor from a constructor 
+                                recursive chaining is not allowed
+                                you can only use this () or super() from a constructor
+
+                  Initialize Block: 
+                                    Also known as Anonymous block.
+                                    
+
+                     It is of two type:
+
+
+
+Destructor : 
+            
