@@ -1,4 +1,4 @@
-package CodeofJaVa.Functions;
+
 public class RECUpalindrome {
     static boolean isPalindrome(String str) {
         if (str.length() <= 1)

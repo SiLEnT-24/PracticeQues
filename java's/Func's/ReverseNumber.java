@@ -1,4 +1,4 @@
-package CodeofJaVa.Functions;
+
 public class ReverseNumber {
     static int reverse(int n){
         int rev=0;

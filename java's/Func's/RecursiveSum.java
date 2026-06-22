@@ -1,12 +1,13 @@
-package CodeofJaVa.Functions;
+
 public class RecursiveSum {
-    static int sum(int n){
-        if(n==1)
-            return 1;
-        return n + sum(n-1);
+    static int sum(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return n + sum(n - 1);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(sum(5));
     }
 }

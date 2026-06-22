@@ -20,11 +20,14 @@ class BankAccount {
         this.customerName = customerName;
         this.balance = balance;
 
-        System.out.println("Customer: " + customerName);
-        System.out.println("Balance: " + balance);
+        System.out.println("Customer: " + this.customerName);
+        System.out.println("Balance: " + this.balance);
+        System.out.println("Account Type: " + accountType);
     }
 
     public static void main(String[] args) {
+        new BankAccount();
+        new BankAccount("Amit");
         new BankAccount("Amit", 5000);
     }
 }

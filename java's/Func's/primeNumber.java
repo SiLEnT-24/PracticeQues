@@ -1,4 +1,4 @@
-package CodeofJaVa.Functions;
+
 public class primeNumber {
     static boolean isPrime(int n){
         if(n<=1)

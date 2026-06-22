@@ -399,4 +399,7 @@ GET or SET:
 
 
 Destructor : 
+
+Private maember are inherited but no accessible insid e he child class
+
             
