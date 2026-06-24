@@ -1,4 +1,4 @@
-class MovieTicket {
+class MovieTicket{
     private String movieName;
     private double ticketPrice;
     private int numberOfTickets;

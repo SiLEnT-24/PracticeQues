@@ -1,4 +1,4 @@
-class BankAccount {
+class BankAccount{
     private String accountHolder;
     private double balance;
     private double withdrawAmount;

@@ -453,3 +453,6 @@ Array :
       we have declare only one variable.
       array is useful for optimisation , searching and retrivial of the data
       
+Singleton class: 
+                Only one object can be created
+
