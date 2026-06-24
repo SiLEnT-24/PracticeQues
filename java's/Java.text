@@ -402,4 +402,54 @@ Destructor :
 
 Private maember are inherited but no accessible insid e he child class
 
-            
+PolyMorphism : 
+              Having multiple method with same name
+              It is a two types
+              compile time also known as Static 
+              runtime also known as dynamic
+              
+Compile time Polymorphism : 
+                           Achieved by method overloading
+
+                           Method Overloading : 
+                                               Having multiple method with same name and different argument inside a
+                                               class is known as method overloading
+
+                                               1. method name must be same 
+                                               2. method argument must be different
+                                               3. method return type can be same or different
+                                               4. inheritance is optional
+                                               5. method can be static or non static
+
+                                               Access specific can be same
+
+
+Binding:
+        Connecting a method call to its declaration
+        It is done by the compiler at compile time
+        It is done using reference type
+
+Run time polymorphism= method overriding + Non primitive upcasting
+
+Rules: 
+     Method name must be same 
+     method argument must be same
+     method return type must be same
+     Inheritance is compulsory
+     Access modifier must be same
+     method must be non static
+
+Non primitive typecasting 
+                        
+Non static executes of object
+satic method and variables bracket open
+
+Static and non static
+execute of reference type
+
+
+Array : 
+      It is collection of similar type of data with contiguous memory allocation
+      we have declare only one variable.
+      array is useful for optimisation , searching and retrivial of the data
+      
