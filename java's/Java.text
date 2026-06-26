@@ -456,3 +456,30 @@ Array :
 Singleton class: 
                 Only one object can be created
 
+String : 
+        String is a collection of characters 
+        We can create a string using two way  :  1. character array  2. string class
+        
+        Override : string class, character class, wrapper class and exception class
+
+        == compares the address or equals compares data
+
+Wrapping class:
+               Wrapper classes are used to convert primitive data types into objects
+
+Boxing : 
+        It is a process of converting primitive into non-primitive
+
+UnBoxing : 
+          It is the prcoess to convert non-primitive to primitive
+
+AutoUnBoxing: 
+
+Exception Handling:
+                   
+
+Types of error
+              1. compile time(syntax)  : Error which prevent the program from compilation
+              2. Logical error         : programmer's error in logic due to which Output of program is incorrect
+              3. exception             : Exception is error occured dunring the execution of the program
+             
