@@ -3,10 +3,7 @@ public class SwitchEx5 {
 	public static void main(String[] args) {
 		char x='a';
 		switch(x) {
-			case 97:
-				System.out.println("Hello");
-				break;
-			case 'b':
+			case 'a':
 				System.out.println("Hi");
 				break;
 			default:
