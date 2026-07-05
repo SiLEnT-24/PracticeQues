@@ -6,7 +6,7 @@ public class SwitchEx5 {
 			case 97:
 				System.out.println("Hello");
 				break;
-			case 'a':
+			case 'b':
 				System.out.println("Hi");
 				break;
 			default:
