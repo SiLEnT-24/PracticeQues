@@ -484,57 +484,92 @@ Types of error
               3. exception             : Exception is error occured dunring the execution of the program
              
 
-Array List
+ArrayList
+            A subclass that implements the List interface.
+            Introduced in Java 1.2.
+            Allows duplicate elements.
+            Supports indexing.
+            Maintains insertion order.
+               Common Methods:
+                              add(element)
+                              add(index, element)
+                              set(index, element)
+                              get(index)
+                              remove(index)
+            Traversal:
+                    Enhanced for-each loop
+                    Iterator
+                    ListIterator
 
-          Subclass of the interface
-          introduced in version 1.2
-          contains duplicacy and indexing
-          order is maintained
-          Methods:  
-                 add(-)
-                 add(-,-)
-                 set(-,-)
-                 get(-)
-                 remove(-)
-            for-each loop, iterator, listIterator 
-            
-
+                    
 HashSet
-      Subclass of set interface
-      introduced in version 1.2
-      Does not contains duplicacy and indexing
-      order is not maintained
-      for-each loop , Iterator can be used 
+      A class that implements the Set interface.
+      Introduced in Java 1.2.
+      Does not allow duplicate elements.
+      Does not support indexing.
+      Does not maintain insertion order.
+         Traversal:
+                  Enhanced for-each loop
+                  Iterator
+                  LinkedHashSet
+                  A subclass of the HashSet class.
+                  Introduced in Java 1.4.
+                  Does not allow duplicate elements.
+                  Does not support indexing.
+                  Maintains insertion order.
+         Traversal:
+                  Enhanced for-each loop
+                  Iterator
 
-LinkedHashSet
-             subclass of hashset class
-             introduced in version1.4
-             does not contains duplicacy and indexing
-             order is maintained
-             for-each loop , Iterator can be used
 
 TreeSet
-      Subclass of list interface
-      introduced in version 1.4
-      Does not contains duplicacy and indexing
-      order is  sorted collection in ascending order
-      for-each loop , Iterator can be used
+      A class that implements the NavigableSet interface (which extends the SortedSet interface).
+      Introduced in Java 1.2.
+      Does not allow duplicate elements.
+      Does not support indexing.
+      Stores elements in ascending sorted order by default.
+        Traversal:
+                  Enhanced for-each loop
+                  Iterator
 
-vector
-      Subclass of list interface
-      also known as legacy class , its methods is slow and synchronized
-      introduced in version 1.0
-      contains duplicacy and indexing
-      order is maintained
-      for-each loop , iterator, listiterator, emueration can be used
+      Note: Your note saying "Subclass of List interface" is incorrect. TreeSet implements the NavigableSet/SortedSet interface, not the List interface.
 
-types of cursor
-               Iterator 
-               List iterator
-               Enumeration
-Cursor 
-     cursor are used to traverse a collection
-     types
-         Iterator     - can only be used with collection interface
-         ListIterator - can be used with list interface
-         Enumeration  - can be used with legacy interface
+
+Vector
+      A class that implements the List interface.
+      Also known as a legacy class.
+      Introduced in Java 1.0.
+      Allows duplicate elements.
+      Supports indexing.
+      Maintains insertion order.
+      Its methods are synchronized, making it thread-safe but generally slower than ArrayList.
+        Traversal:
+                  Enhanced for-each loop
+                  Iterator
+                  ListIterator
+                  Enumeration
+      Types of Cursors:
+                        Iterator
+                        ListIterator
+                        Enumeration
+
+
+Cursor
+
+A cursor is an object that is used to traverse (iterate through) the elements of a collection.
+
+Types of Cursors
+                  1. Iterator:
+                              Used to traverse any collection that implements the Collection interface.
+                              Can move only in the forward direction.
+                              Can read and remove elements during traversal.
+
+                  2. ListIterator:
+                                    Used only with classes that implement the List interface.
+                                    Can move in both forward and backward directions.
+                                    Can read, add, update, and remove elements during traversal.
+
+                  3. Enumeration:
+                                    Used with legacy classes such as Vector and Hashtable.
+                                    Can move only in the forward direction.
+                                    Can only read elements; it cannot add, update, or remove them.
