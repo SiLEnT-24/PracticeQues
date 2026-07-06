@@ -483,3 +483,58 @@ Types of error
               2. Logical error         : programmer's error in logic due to which Output of program is incorrect
               3. exception             : Exception is error occured dunring the execution of the program
              
+
+Array List
+
+          Subclass of the interface
+          introduced in version 1.2
+          contains duplicacy and indexing
+          order is maintained
+          Methods:  
+                 add(-)
+                 add(-,-)
+                 set(-,-)
+                 get(-)
+                 remove(-)
+            for-each loop, iterator, listIterator 
+            
+
+HashSet
+      Subclass of set interface
+      introduced in version 1.2
+      Does not contains duplicacy and indexing
+      order is not maintained
+      for-each loop , Iterator can be used 
+
+LinkedHashSet
+             subclass of hashset class
+             introduced in version1.4
+             does not contains duplicacy and indexing
+             order is maintained
+             for-each loop , Iterator can be used
+
+TreeSet
+      Subclass of list interface
+      introduced in version 1.4
+      Does not contains duplicacy and indexing
+      order is  sorted collection in ascending order
+      for-each loop , Iterator can be used
+
+vector
+      Subclass of list interface
+      also known as legacy class , its methods is slow and synchronized
+      introduced in version 1.0
+      contains duplicacy and indexing
+      order is maintained
+      for-each loop , iterator, listiterator, emueration can be used
+
+types of cursor
+               Iterator 
+               List iterator
+               Enumeration
+Cursor 
+     cursor are used to traverse a collection
+     types
+         Iterator     - can only be used with collection interface
+         ListIterator - can be used with list interface
+         Enumeration  - can be used with legacy interface
