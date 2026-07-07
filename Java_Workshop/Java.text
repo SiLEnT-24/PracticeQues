@@ -573,3 +573,65 @@ Types of Cursors
                                     Used with legacy classes such as Vector and Hashtable.
                                     Can move only in the forward direction.
                                     Can only read elements; it cannot add, update, or remove them.
+
+
+HashMap
+      Child of the Map interface.
+      Introduced in Java 1.2.
+      Stores data in key-value pairs.
+      Keys are unique, but values can be duplicate.
+      Allows one null key and multiple null values.
+      Order of elements is not maintained.
+      Not synchronized (not thread-safe).
+
+
+LinkedHashMap
+            Child class of HashMap.
+            Introduced in Java 1.4.
+            Stores data in key-value pairs.
+            Keys are unique, but values can be duplicate.
+            Allows one null key and multiple null values.
+            Maintains the insertion order of elements.
+            Not synchronized (not thread-safe).
+            
+
+HashTable 
+         Child of map interface
+         Introduced in version 1.0
+         legacy class
+         Methods are synchronized (thread-safe)
+         stores data inkey values pairs(enteries/buckets)
+         key are unique
+         values can be duplicates
+         can not bestores null key
+         order is not maintained 
+TreeMap
+       Child of sortedMap
+       Introduced in version 1.2
+       stores key-value pair
+       keys are stored inascending  order
+       does not allow null keys
+
+Stack  
+     Subclass of vector
+     Introduced in version 1.0
+     legacy class 
+     stores in LIFO order
+     can stores null values
+     Methods aresynchronized(thread-safe)
+     methods: 
+            push()
+            pop()
+            peek()
+            search()
+            empty()
+
+Queue 
+     Child of Collection Interface
+     Introduced in version 1.5
+     follows FIFO order
+     Duplicate elements are allowed
+     common Implementations:
+                           LinkedList
+                           PriorityQueue
+                           ArrayQueue
