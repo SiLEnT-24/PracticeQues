@@ -593,7 +593,7 @@ LinkedHashMap
             Allows one null key and multiple null values.
             Maintains the insertion order of elements.
             Not synchronized (not thread-safe).
-            
+
 
 HashTable 
          Child of map interface
@@ -605,12 +605,15 @@ HashTable
          values can be duplicates
          can not bestores null key
          order is not maintained 
+
+
 TreeMap
        Child of sortedMap
        Introduced in version 1.2
        stores key-value pair
        keys are stored inascending  order
        does not allow null keys
+       
 
 Stack  
      Subclass of vector
@@ -625,6 +628,7 @@ Stack
             peek()
             search()
             empty()
+
 
 Queue 
      Child of Collection Interface
