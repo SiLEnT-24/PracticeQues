@@ -31,6 +31,13 @@ public class CreateTable {
 
             System.out.println("Table created successfully.");
 
+            // Insert sample data
+            String insertSql1 = "INSERT INTO student (name, phone) VALUES ('Alok', '9876543210')";
+
+            st.executeUpdate(insertSql1);
+
+            System.out.println("Data inserted successfully.");
+
             st.close();
             c.close();
 
