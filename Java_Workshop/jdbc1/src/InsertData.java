@@ -22,9 +22,9 @@ public class InsertData {
 			st.executeUpdate(
 					"insert into student(name,phone)values('Alok','4561237893')");
 			System.out.println("Data Inserted!!");
-		}catch(Exception e) {
-			e.printStackTrace(); 
-		}
+		}catch (ClassNotFoundException | java.sql.SQLException e) {
+            System.err.println("Error inserting data: " + e.getMessage());
+        }
 
     }
     

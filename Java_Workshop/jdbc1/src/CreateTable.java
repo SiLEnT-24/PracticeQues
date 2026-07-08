@@ -41,8 +41,8 @@ public class CreateTable {
             st.close();
             c.close();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (ClassNotFoundException | java.sql.SQLException e) {
+            System.err.println("Error inserting data: " + e.getMessage());
         }
     }
 }

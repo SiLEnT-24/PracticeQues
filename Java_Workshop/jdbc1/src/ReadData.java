@@ -33,8 +33,8 @@ public class ReadData {
 			if(count==0) {
 				System.out.println("No record found!!");
 			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+		}catch (ClassNotFoundException | java.sql.SQLException e) {
+            System.err.println("Error inserting data: " + e.getMessage());
+        }
     }
 }

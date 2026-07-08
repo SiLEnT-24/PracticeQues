@@ -23,8 +23,8 @@ public class InsertData1 {
 			ps.setString(2,"1122336655");
 			ps.executeUpdate();
 			System.out.println("Data Inserted!!");
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+        } catch (ClassNotFoundException | java.sql.SQLException e) {
+            System.err.println("Error inserting data: " + e.getMessage());
+        }
     }
 }
