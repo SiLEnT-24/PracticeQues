@@ -1,0 +1,9 @@
+{
+  "java.project.excludePaths": [
+    "**/Assignments/**",
+    "**/Java_Workshop/**"
+  ],
+  "files.exclude": {
+    "**/*.class": true
+  }
+}
