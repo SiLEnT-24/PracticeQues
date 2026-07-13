@@ -641,3 +641,62 @@ Queue
                            ArrayQueue
 
 
+String sEmail=t1.getText();
+    String pass=new String(t2.getPassword());
+    String rEmail=t3.getText();
+    String subject=t4.getText();
+    String body=t5.getText();
+    
+    Properties prop=new Properties();
+    prop.put("mail.smtp.host", "smtp.gmail.com");
+    prop.put("mail.smtp.auth", "true");
+    prop.put("mail.smtp.ssl.enable", "true");
+    prop.put("mail.smtp.port", "465");
+    
+    Session session=Session.getInstance(prop,new Authenticator(){
+    @Override
+    protected PasswordAuthentication getPasswordAuthentication(){
+    return new PasswordAuthentication(sEmail,pass);}
+    });
+    
+    MimeMessage message=new MimeMessage(session);
+    try{
+    message.setFrom(sEmail);
+    message.setRecipient(Message.RecipientType.TO,new InternetAddress(rEmail));
+    message.setSubject(subject);
+    
+    MimeMultipart mime=new MimeMultipart ();
+    MimeBodyPart content=new MimeBodyPart();
+    MimeBodyPart attach=new MimeBodyPart();
+
+     try{
+   
+    attach.attachFile(f);
+    content.setText(body);
+    mime.addBodyPart(content);
+    mime.addBodyPart(attach);
+    
+    }catch(IOException e){
+    e.printStackTrace();
+    JOptionPane.showMessageDialog(null, "Something Went Wrong");
+    }
+    
+    message.setContent(mime);
+    Transport.send(message);
+    System.out.println("Mail Send");
+    JOptionPane.showMessageDialog(null, "Mail sent");
+    }catch(Exception e){
+    e.printStackTrace();
+    JOptionPane.showMessageDialog(null, "Mail Not sent");
+    
+    JFileChooser fc=new JFileChooser();
+        fc.showOpenDialog(null);
+        f=fc.getSelectedFile();
+        t6.setText(f.getAbsolutePath());
+
+         import java.util.*;
+ import javax.mail.*;
+ import javax.mail.internet.*;
+ import java.io.*;
+ import javax.swing.*;
+ import javax.activation.*;
